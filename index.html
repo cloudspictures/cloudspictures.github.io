@@ -1,8 +1,65 @@
+<!DOCTYPE html>
 <html>
-  <head>
-    <title>Cloud Pictures</title>
-  </head>
-  <body>
-    <p>This site is under construction</p>
-  </body>
+<head>
+	<title>Cloud Pictures</title>
+<style> 
+div {
+    position: fixed;
+    animation-name: cloud;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    z-index: -2;
+}
+
+.cloud {
+	position: fixed;
+    animation-name: cloud2;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    z-index: -1;
+}
+
+.cloud2 {
+	position: fixed;
+    animation-name: cloud3;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    z-index: -0;
+}
+
+/* Standard syntax */
+@keyframes cloud {
+    0%  {left:50px; top:0px;}
+    60%  {left50px; top:20px;}
+    100%  {left:50px; top:0px;}
+}
+
+@keyframes cloud2 {
+    0%  {left:100px; top:9px;}
+    63%  {left:100px; top:29px;}
+    100%  {left:100px; top:9px;}
+}
+
+@keyframes cloud3 {
+    0%  {left:0px; top:9px;}
+    63%  {left:0px; top:39px;}
+    100%  {left:0px; top:9px;}
+}
+</style>
+</head>
+<body>
+	<p>Site will be up soon.</p>
+<div>
+	<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Cartoon_cloud.svg/2000px-Cartoon_cloud.svg.png" alt="Girl in a jacket" width="150" height="100">
+</div>
+
+<div class="cloud">
+	<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Cartoon_cloud.svg/2000px-Cartoon_cloud.svg.png" alt="Girl in a jacket" width="150" height="100">
+</div>
+
+<div class="cloud2">
+	<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Cartoon_cloud.svg/2000px-Cartoon_cloud.svg.png" alt="Girl in a jacket" width="150" height="100">
+</div>
+
+</body>
 </html>
